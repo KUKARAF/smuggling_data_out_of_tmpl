@@ -1,0 +1,11 @@
+/home/rafa/dev/smuggle/smuggling_data_out_of_tmpl/target/i686-pc-windows-gnu/release/deps/libsocket2-103d928c426d1bfb.rmeta: /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/lib.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockaddr.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/socket.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockref.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sys/windows.rs
+
+/home/rafa/dev/smuggle/smuggling_data_out_of_tmpl/target/i686-pc-windows-gnu/release/deps/libsocket2-103d928c426d1bfb.rlib: /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/lib.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockaddr.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/socket.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockref.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sys/windows.rs
+
+/home/rafa/dev/smuggle/smuggling_data_out_of_tmpl/target/i686-pc-windows-gnu/release/deps/socket2-103d928c426d1bfb.d: /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/lib.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockaddr.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/socket.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockref.rs /home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sys/windows.rs
+
+/home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/lib.rs:
+/home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockaddr.rs:
+/home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/socket.rs:
+/home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sockref.rs:
+/home/rafa/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.7/src/sys/windows.rs:

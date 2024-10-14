@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=/home/rafa/dev/smuggle/smuggling_data_out_of_tmpl/target/debug/build/mime_guess-85c4c0d9e829df2b/out/mime_types_generated.rs
