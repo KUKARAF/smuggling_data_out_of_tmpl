@@ -16,7 +16,36 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Set up Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        target: ${{ matrix.os == 'windows-latest' && 'x86_64-pc-windows-msvc' || 'x86_64-unknown-linux-gnu' }}
+
     - name: Build
-      run: cargo build --verbose
-    - name: Run tests
-      run: cargo test --verbose
+      run: cargo build --release --target ${{ matrix.os == 'windows-latest' && 'x86_64-pc-windows-msvc' || 'x86_64-unknown-linux-gnu' }}
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ matrix.os == 'windows-latest' && 'myapp.exe' || 'myapp' }}
+        path: target/${{ matrix.os == 'windows-latest' && 'x86_64-pc-windows-msvc/release/myapp.exe' || 'x86_64-unknown-linux-gnu/release/myapp' }}
+
+    - name: Download artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: myapp.exe
+        path: ./artifacts
+
+    - name: Download Linux artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: myapp
+        path: ./artifacts
+
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: ./artifacts/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

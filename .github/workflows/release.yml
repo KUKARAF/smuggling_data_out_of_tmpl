@@ -31,25 +31,3 @@ jobs:
         name: ${{ matrix.os == 'windows-latest' && 'myapp.exe' || 'myapp' }}
         path: target/${{ matrix.os == 'windows-latest' && 'x86_64-pc-windows-msvc/release/myapp.exe' || 'x86_64-unknown-linux-gnu/release/myapp' }}
 
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Download artifacts
-      uses: actions/download-artifact@v3
-      with:
-        name: myapp.exe
-        path: ./artifacts
-
-    - name: Download Linux artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: myapp
-        path: ./artifacts
-
-    - name: Create Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: ./artifacts/*
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
